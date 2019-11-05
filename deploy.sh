@@ -1,9 +1,9 @@
 #!/bin/bash
 APPLICATION="AlgorithmWebService"
-REPOSITORY="/home/ec2-user/app/git/$APPLICATION"
+EC2_REPOSITORY="/home/ec2-user/app/git/$APPLICATION"
+REPOSITORY=($pwd)
 FILE_NAME="src/main/resources/application.properties src/test/java/com/algorithm/mySQLConnectionTest.java"
 
-cd $REPOSITORY
 echo "Git Pull"
 git pull
 echo "프로젝트 Build 시작"
